@@ -44,3 +44,7 @@ body {
   mask-image: radial-gradient(ellipse 80% 60% at 50% 20%, black 40%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 20%, black 40%, transparent 100%);
 }
+
+p, h1, h2, h3, span {
+  text-wrap: pretty;
+}

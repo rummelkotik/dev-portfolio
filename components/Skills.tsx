@@ -23,7 +23,7 @@ const skillsData = [
       "SQLite",
       "REST API",
       "LLM API Integrations",
-      "Асинхронный JS / HTTP"
+      "Асинхронный JS\u00A0/\u00A0HTTP"
     ]
   },
   {
@@ -33,7 +33,7 @@ const skillsData = [
       "Docker",
       "Git & GitHub",
       "Cloudflare Tunnels",
-      "VS Code & Модульная архитектура"
+      "VS Code &\u00A0Модульная архитектура"
     ]
   }
 ];
@@ -42,11 +42,11 @@ export default function Skills() {
   return (
     <section id="skills" className="py-20 px-4 border-t border-neutral-900 bg-neutral-950/30">
       <div className="mx-auto max-w-5xl">
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Стек и навыки
+        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl text-balance">
+          Стек и&nbsp;навыки
         </h2>
-        <p className="mt-2 text-neutral-400">
-          Инструменты, архитектурные решения и среда разработки.
+        <p className="mt-2 text-neutral-400 text-balance">
+          Инструменты, архитектурные решения и&nbsp;среда разработки.
         </p>
 
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -66,7 +66,7 @@ export default function Skills() {
                 {group.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-lg border border-neutral-800 bg-neutral-900 px-3 py-1.5 text-xs text-neutral-300 transition-colors hover:border-neutral-700 hover:text-white"
+                    className="rounded-lg border border-neutral-800 bg-neutral-900 px-3 py-1.5 text-xs text-neutral-300 transition-colors hover:border-neutral-700 hover:text-white whitespace-nowrap"
                   >
                     {skill}
                   </span>
