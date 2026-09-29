@@ -18,7 +18,7 @@ export default function Hero() {
           className="inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-900/80 px-3 py-1 text-xs text-neutral-300"
         >
           <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-          Доступен для новых проектов
+          Доступен для&nbsp;новых проектов
         </motion.div>
 
         <motion.h1
@@ -27,16 +27,17 @@ export default function Hero() {
           transition={{ delay: 0.1 }}
           className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-6xl text-balance"
         >
-          Разработка кастомных веб-сервисов и&nbsp;нестандартного фронтенда
+          Разработка кастомных веб&#8209;сервисов <br className="hidden sm:inline" />
+          и&nbsp;нестандартного фронтенда
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="mt-4 max-w-2xl text-base text-neutral-400 sm:text-lg text-balance"
+          className="mt-4 max-w-2xl text-base text-neutral-400 sm:text-lg [text-wrap:pretty]"
         >
-          Создаю интерактивные интерфейсы, дашборды и&nbsp;веб-приложения с&nbsp;упором на&nbsp;производительность, чистую архитектуру и&nbsp;внимание к&nbsp;деталям.
+          Создаю интерактивные интерфейсы, дашборды и&nbsp;веб&#8209;приложения с&nbsp;упором на&nbsp;производительность, чистую архитектуру и&nbsp;внимание к&nbsp;деталям.
         </motion.p>
 
         <motion.div
