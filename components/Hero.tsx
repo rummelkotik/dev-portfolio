@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowDown, Send } from 'lucide-react';
 
@@ -9,14 +10,15 @@ export default function Hero() {
       {/* Мягкие световые акценты на фоне */}
       <div className="pointer-events-none absolute -top-40 left-1/2 -z-10 h-[500px] w-[600px] -translate-x-1/2 rounded-full bg-emerald-500/10 blur-[130px]" />
       <div className="pointer-events-none absolute top-28 left-1/4 -z-10 h-[350px] w-[450px] rounded-full bg-cyan-500/5 blur-[120px]" />
-      <div className="mx-auto max-w-4xl text-left">
+
+      <div className="relative z-10 mx-auto max-w-4xl text-left">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           className="inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-900/80 px-3 py-1 text-xs text-neutral-300"
         >
           <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-          Доступен для&nbsp;новых проектов
+          Доступен для новых проектов
         </motion.div>
 
         <motion.h1
@@ -41,7 +43,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="mt-8 flex flex-wrap gap-4"
+          className="relative z-20 mt-8 flex flex-wrap gap-4"
         >
           <a
             href="#projects"
@@ -49,14 +51,15 @@ export default function Hero() {
           >
             Смотреть проекты <ArrowDown size={16} />
           </a>
-          <a
-            href="https://t.me/yourusername"
+
+          <Link
+            href="https://t.me/bushido1616"
             target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-2 rounded-xl border border-neutral-800 bg-neutral-900 px-5 py-3 text-sm font-medium text-white hover:border-neutral-700 transition-colors"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-xl border border-neutral-800 bg-neutral-900 px-5 py-3 text-sm font-medium text-white hover:border-neutral-700 transition-colors cursor-pointer"
           >
             Написать в&nbsp;Telegram <Send size={16} />
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>
