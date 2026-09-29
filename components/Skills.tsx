@@ -23,17 +23,17 @@ const skillsData = [
       "SQLite",
       "REST API",
       "LLM API Integrations",
-      "Асинхронный JS\u00A0/\u00A0HTTP"
+      "Асинхронный JS / HTTP"
     ]
   },
   {
-    category: "Инфраструктура & Среда",
+    category: "Инфраструктура и среда",
     skills: [
       "Linux / Bash",
       "Docker",
       "Git & GitHub",
       "Cloudflare Tunnels",
-      "VS Code &\u00A0Модульная архитектура"
+      "VS Code, модульность"
     ]
   }
 ];
@@ -42,11 +42,11 @@ export default function Skills() {
   return (
     <section id="skills" className="py-20 px-4 border-t border-neutral-900 bg-neutral-950/30">
       <div className="mx-auto max-w-5xl">
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl text-balance">
-          Стек и&nbsp;навыки
+        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          Стек технологий
         </h2>
-        <p className="mt-2 text-neutral-400 text-balance">
-          Инструменты, архитектурные решения и&nbsp;среда разработки.
+        <p className="mt-2 text-neutral-400">
+          Инструменты разработки, архитектурные решения, рабочий стек.
         </p>
 
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">

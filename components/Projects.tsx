@@ -18,8 +18,8 @@ export default function Projects() {
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl text-balance">
             Избранные проекты
           </h2>
-          <p className="mt-2 text-neutral-400 text-balance">
-            Нажмите на&nbsp;карточку, чтобы посмотреть технический разбор задачи и&nbsp;архитектуру.
+          <p className="mt-2 text-neutral-400 text-pretty">
+            Кликните карточку для просмотра архитектуры и технических решений.
           </p>
         </div>
 
