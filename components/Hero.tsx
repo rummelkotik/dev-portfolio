@@ -25,7 +25,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="mt-6 text-[32px] font-bold tracking-tight text-white leading-[1.15] sm:text-6xl md:text-7xl lg:text-[76px] lg:leading-[1.08] break-words"
+          className="mt-6 text-[27px] xs:text-[30px] font-bold tracking-tight text-white leading-[1.18] sm:text-6xl md:text-7xl lg:text-[76px] lg:leading-[1.08]"
         >
           Фронтенд&#8209;разработка, <br className="hidden sm:inline" />
           кастомные веб&#8209;сервисы
@@ -35,10 +35,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="mt-6 max-w-3xl text-sm leading-relaxed text-neutral-400 sm:text-lg lg:text-xl lg:leading-normal"
+          className="mt-4 max-w-3xl text-sm leading-relaxed text-neutral-400 sm:text-lg lg:text-xl lg:leading-normal"
         >
-          Создаю интерактивные интерфейсы, дашборды и&nbsp;веб&#8209;приложения. <br className="hidden sm:inline" />
-          Фокус на&nbsp;производительность, чистую архитектуру и&nbsp;детали.
+          Создаю интерактивные интерфейсы и&nbsp;веб&#8209;сервисы. <br className="hidden sm:inline" />
+          Фокус на&nbsp;быстродействие, чистую архитектуру и&nbsp;детали.
         </motion.p>
 
         <motion.div

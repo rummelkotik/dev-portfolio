@@ -13,7 +13,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4">
         {/* Backdrop */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -29,12 +29,12 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
           transition={{ duration: 0.2 }}
-          className="relative max-h-[85vh] w-full max-w-2xl overflow-y-auto rounded-3xl border border-neutral-800 bg-[#0f0f13] p-6 shadow-2xl sm:p-8"
+          className="relative max-h-[88vh] w-full max-w-2xl overflow-y-auto rounded-3xl border border-neutral-800 bg-[#0f0f13] p-5 shadow-2xl sm:p-8"
         >
           {/* Close button */}
           <button
             onClick={onClose}
-            className="absolute top-6 right-6 flex h-8 w-8 items-center justify-center rounded-full border border-neutral-800 bg-neutral-900 text-neutral-400 hover:text-white"
+            className="absolute top-5 right-5 flex h-8 w-8 items-center justify-center rounded-full border border-neutral-800 bg-neutral-900 text-neutral-400 hover:text-white transition-colors cursor-pointer"
           >
             ✕
           </button>
@@ -42,11 +42,11 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           <span className="text-xs font-mono uppercase tracking-wider text-emerald-400">
             {project.category}
           </span>
-          <h3 className="mt-2 text-2xl font-bold text-white sm:text-3xl text-balance">
+          <h3 className="mt-2 text-xl font-bold text-white sm:text-3xl leading-snug">
             {project.title}
           </h3>
 
-          <p className="mt-4 text-sm leading-relaxed text-neutral-300 sm:text-base [text-wrap:pretty]">
+          <p className="mt-4 text-sm leading-relaxed text-neutral-300 sm:text-base">
             {project.description}
           </p>
 
@@ -55,7 +55,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               <h4 className="text-xs font-semibold uppercase tracking-wider text-neutral-400">
                 Инженерный вызов
               </h4>
-              <p className="mt-1 text-sm text-neutral-300 [text-wrap:pretty]">
+              <p className="mt-1 text-sm leading-relaxed text-neutral-300">
                 {project.challenge}
               </p>
             </div>
@@ -64,7 +64,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               <h4 className="text-xs font-semibold uppercase tracking-wider text-neutral-400">
                 Реализованное решение
               </h4>
-              <p className="mt-1 text-sm text-neutral-300 [text-wrap:pretty]">
+              <p className="mt-1 text-sm leading-relaxed text-neutral-300">
                 {project.solution}
               </p>
             </div>
@@ -86,13 +86,13 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             </div>
           </div>
 
-          <div className="mt-8 flex gap-3 border-t border-neutral-800/80 pt-6">
+          <div className="mt-8 flex flex-col sm:flex-row gap-3 border-t border-neutral-800/80 pt-6">
             {project.githubUrl && (
               <a
                 href={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 rounded-xl bg-white px-5 py-2.5 text-xs font-medium text-black hover:bg-neutral-200 transition-colors"
+                className="flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-2.5 text-xs font-medium text-black hover:bg-neutral-200 transition-colors"
               >
                 Исходный код на GitHub →
               </a>
@@ -102,7 +102,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 rounded-xl border border-neutral-700 bg-neutral-800 px-5 py-2.5 text-xs font-medium text-white hover:bg-neutral-700 transition-colors"
+                className="flex items-center justify-center gap-2 rounded-xl border border-neutral-700 bg-neutral-800 px-5 py-2.5 text-xs font-medium text-white hover:bg-neutral-700 transition-colors"
               >
                 Открыть Live Демо ↗
               </a>
