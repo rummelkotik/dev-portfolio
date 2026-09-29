@@ -46,7 +46,7 @@ export const projects: Project[] = [
     shortDesc: "Интерактивный медиа-лендинг: кастомные карусели, оптимизация графики, сборка Vite.",
     description: "Промо-лендинг с интерактивными слайдерами и плавными интерфейсными анимациями.",
     challenge: "Быстрая загрузка тяжелых картинок и плавная анимация без просадок FPS.",
-    solution: "Сжатие изображений в формат WebP через Vite, модульный JavaScript, плавные CSS-эффекты.",
+    solution: "Сжатие изображений в формат WebP через Vite, модульный JavaScript,\u00A0плавные CSS‑эффекты.",
     tags: ["JavaScript", "CSS3", "Vite", "Image Optimization", "Responsive", "UI/UX"],
     gradient: "from-purple-600/20 via-pink-500/10 to-transparent",
     githubUrl: "https://github.com/rummelkotik/soundwave-site",
