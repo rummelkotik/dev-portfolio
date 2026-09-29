@@ -37,7 +37,8 @@ export default function Hero() {
           transition={{ delay: 0.2 }}
           className="mt-4 max-w-2xl text-base text-neutral-400 sm:text-lg"
         >
-          Создаю интерактивные интерфейсы, дашборды и&nbsp;веб&#8209;приложения с&nbsp;упором&nbsp;на&nbsp;производительность, чистую архитектуру и&nbsp;внимание к&nbsp;деталям.
+          Создаю интерактивные интерфейсы, дашборды и&nbsp;веб&#8209;приложения. <br className="hidden sm:inline" />
+          Фокус на&nbsp;производительность, чистую архитектуру и&nbsp;детали.
         </motion.p>
 
         <motion.div
