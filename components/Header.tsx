@@ -20,7 +20,7 @@ export default function Header() {
           Стек
         </a>
         <a
-          href="https://t.me/yourusername"
+          href="https://t.me/bushido1616"
           target="_blank"
           rel="noreferrer"
           className="rounded-full bg-white px-3.5 py-1 text-xs font-semibold text-black hover:bg-neutral-200 transition-colors"
