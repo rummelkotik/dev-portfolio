@@ -42,11 +42,11 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           <span className="text-xs font-mono uppercase tracking-wider text-emerald-400">
             {project.category}
           </span>
-          <h3 className="mt-2 text-2xl font-bold text-white sm:text-3xl">
+          <h3 className="mt-2 text-2xl font-bold text-white sm:text-3xl text-balance">
             {project.title}
           </h3>
 
-          <p className="mt-4 text-sm leading-relaxed text-neutral-300 sm:text-base">
+          <p className="mt-4 text-sm leading-relaxed text-neutral-300 sm:text-base [text-wrap:pretty]">
             {project.description}
           </p>
 
@@ -55,7 +55,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               <h4 className="text-xs font-semibold uppercase tracking-wider text-neutral-400">
                 Инженерный вызов
               </h4>
-              <p className="mt-1 text-sm text-neutral-300">
+              <p className="mt-1 text-sm text-neutral-300 [text-wrap:pretty]">
                 {project.challenge}
               </p>
             </div>
@@ -64,14 +64,14 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               <h4 className="text-xs font-semibold uppercase tracking-wider text-neutral-400">
                 Реализованное решение
               </h4>
-              <p className="mt-1 text-sm text-neutral-300">
+              <p className="mt-1 text-sm text-neutral-300 [text-wrap:pretty]">
                 {project.solution}
               </p>
             </div>
           </div>
 
           <div className="mt-6">
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">
+            <h4 className="mb-2 text-xs font-semibold uppercase tracking-wider text-neutral-400">
               Использованный стек
             </h4>
             <div className="flex flex-wrap gap-2">
@@ -91,7 +91,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               <a
                 href={project.githubUrl}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-xl bg-white px-5 py-2.5 text-xs font-medium text-black hover:bg-neutral-200 transition-colors"
               >
                 Исходный код на GitHub →
@@ -101,7 +101,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               <a
                 href={project.liveUrl}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-xl border border-neutral-700 bg-neutral-800 px-5 py-2.5 text-xs font-medium text-white hover:bg-neutral-700 transition-colors"
               >
                 Открыть Live Демо ↗
