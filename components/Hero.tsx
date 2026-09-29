@@ -25,10 +25,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-6xl text-balance"
+          className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-6xl"
         >
-          Разработка кастомных веб&#8209;сервисов <br className="hidden sm:inline" />
-          и&nbsp;нестандартного фронтенда
+          Разработка кастомных веб&#8209;сервисов и&nbsp;нестандартного&nbsp;фронтенда
         </motion.h1>
 
         <motion.p
