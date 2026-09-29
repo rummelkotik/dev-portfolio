@@ -25,9 +25,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-6xl"
+          className="mt-6 max-w-4xl text-4xl font-bold tracking-tight text-white sm:text-6xl"
         >
-          Разработка кастомных веб&#8209;сервисов и&nbsp;нестандартного&nbsp;фронтенда
+          Разработка кастомных веб&#8209;сервисов <br className="hidden sm:inline" />
+          и&nbsp;современного фронтенда
         </motion.h1>
 
         <motion.p
@@ -36,7 +37,7 @@ export default function Hero() {
           transition={{ delay: 0.2 }}
           className="mt-4 max-w-2xl text-base text-neutral-400 sm:text-lg [text-wrap:pretty]"
         >
-          Создаю интерактивные интерфейсы, дашборды и&nbsp;веб&#8209;приложения с&nbsp;упором на&nbsp;производительность, чистую архитектуру и&nbsp;внимание к&nbsp;деталям.
+          Создаю интерактивные интерфейсы, дашборды и&nbsp;веб&#8209;приложения с&nbsp;упором&nbsp;на&nbsp;производительность, чистую архитектуру и&nbsp;внимание к&nbsp;деталям.
         </motion.p>
 
         <motion.div
