@@ -15,11 +15,11 @@ export default function Projects() {
           <span className="text-xs font-mono uppercase tracking-widest text-emerald-400">
             Портфолио
           </span>
-          <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl text-balance">
             Избранные проекты
           </h2>
-          <p className="mt-2 text-neutral-400">
-            Нажмите на карточку, чтобы посмотреть технический разбор задачи и архитектуру.
+          <p className="mt-2 text-neutral-400 text-balance">
+            Нажмите на&nbsp;карточку, чтобы посмотреть технический разбор задачи и&nbsp;архитектуру.
           </p>
         </div>
 
