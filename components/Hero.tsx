@@ -25,17 +25,17 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="mt-6 max-w-4xl text-4xl font-bold tracking-tight text-white sm:text-6xl"
+          className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-6xl"
         >
-          Разработка кастомных веб&#8209;сервисов <br className="hidden sm:inline" />
-          и&nbsp;современного фронтенда
+          Фронтенд&#8209;разработка, <br className="hidden sm:inline" />
+          кастомные веб&#8209;сервисы
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="mt-4 max-w-2xl text-base text-neutral-400 sm:text-lg [text-wrap:pretty]"
+          className="mt-4 max-w-2xl text-base text-neutral-400 sm:text-lg"
         >
           Создаю интерактивные интерфейсы, дашборды и&nbsp;веб&#8209;приложения с&nbsp;упором&nbsp;на&nbsp;производительность, чистую архитектуру и&nbsp;внимание к&nbsp;деталям.
         </motion.p>
